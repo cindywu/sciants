@@ -1,8 +1,9 @@
 <html>
 	<head>
-		<title>SciAnts</title>
+		<title>SciAnts - Note</title>
 	</head>
+	
 	<body>
-		
+		Notes will go here!
 	</body>
 </html>
