@@ -10,6 +10,10 @@ h2 {
 	margin-bottom: 5px;
 }
 
+h3, p, ul, ol {
+	margin-bottom: 5px;
+}
+
 #container {
 	margin-top: 25px;
 	width: 960px;
