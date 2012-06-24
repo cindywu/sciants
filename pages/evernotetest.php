@@ -113,12 +113,18 @@ $notebooks = $noteStore->listNotebooks($authToken);
 		#$notefilter->tagGuids = array($notebook->guid);
 		$allnotes = $noteStore->findNotes($authToken, $filter, 0, 100);
 		$notebookname = $notebook->name;
-		foreach ($notes->notes as $note) {
-			$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
+		if (empty($notes->notes)) {
+?>
+			<p>Empty.....</p>
+<?php
+		} else {
+			foreach ($notes->notes as $note) {
+				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
 
 ?>
-			<p>Note?: <?=$fullNote->content?></p>
+				<p>Note?: <?=$fullNote->content?></p>
 <?php
+			}
 		}
 	}
 ?>
