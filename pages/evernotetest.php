@@ -18,18 +18,7 @@
 		<p>Notebook Name:<?=$notebook->name?></p>
 		<p><?=$notebook->guid?></p>
 <?php
-		$notes = getAllNotes($authToken, $notebook);
-		if (empty($notes)) {
-?>
-			<p>Empty.....</p>
-<?php
-		}
-		foreach ($notes as $note) {
-			$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
-?>
-			<p>Note?: <?=$fullNote->title?></p>
-<?php
-		}
+
 	}
 ?>
 
