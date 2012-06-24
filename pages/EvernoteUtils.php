@@ -21,7 +21,6 @@ require_once("packages/UserStore/UserStore_constants.php");
 require_once("packages/NoteStore/NoteStore.php");
 require_once("packages/Limits/Limits_constants.php");
 
-
 // A global exception handler for our program so that error messages all go to the console
 function en_exception_handler($exception) {
   echo "Uncaught " . get_class($exception) . ":\n";
@@ -97,16 +96,15 @@ function getNoteStore($authToken) {
 }
 
 function getAllNotebooks($authToken) {
-	$noteStore = getNoteStore();
-	// List all of the notebooks in the user's account        
+	$noteStore = getNoteStore($authToken);   
 	$notebooks = $noteStore->listNotebooks($authToken);
 	return $notebooks;
 }
 
-function getAllNotes($authToken, $notebook,){
+function getAllNotes($authToken, $notebook){
 	$filter = new NoteFilter();
 	$filter->notebookGuid = $notebook->guid;
-	$noteStore = getNoteStore();
+	$noteStore = getNoteStore($authToken);
 	$notes = $noteStore->findNotes($authToken, $filter, 0, 100);
 	return $notes->notes;
 }
