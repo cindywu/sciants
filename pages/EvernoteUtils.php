@@ -95,16 +95,14 @@ function getNoteStore($authToken) {
 	return $noteStore;
 }
 
-function getAllNotebooks($authToken) {
-	$noteStore = getNoteStore($authToken);   
+function getAllNotebooks($authToken, $noteStore) { 
 	$notebooks = $noteStore->listNotebooks($authToken);
 	return $notebooks;
 }
 
-function getAllNotes($authToken, $notebook){
+function getAllNotes($authToken, $noteStore, $notebook){
 	$filter = new NoteFilter();
 	$filter->notebookGuid = $notebook->guid;
-	$noteStore = getNoteStore($authToken);
 	$notes = $noteStore->findNotes($authToken, $filter, 0, 100);
 	return $notes->notes;
 }

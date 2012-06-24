@@ -13,13 +13,13 @@
 	<p>Number of Notebooks:</p>
 <?php
 	$noteStore = getNoteStore($authToken);
-	$notebooks = getAllNotebooks($authToken);
+	$notebooks = getAllNotebooks($authToken, $noteStore);
 	foreach ($notebooks as $notebook) {
 ?>
 		<p>Notebook Name:<?=$notebook->name?></p>
 		<p><?=$notebook->guid?></p>
 <?php
-		$notes = getAllNotes($authToken, $notebook);
+		$notes = getAllNotes($authToken, $noteStore, $notebook);
 		if (empty($notes)) {
 ?>
 			<p>Empty.....</p>
