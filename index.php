@@ -1,4 +1,4 @@
-<html>
+	<html>
 	<head>
 		<title>SciAnts</title>
 		<link rel="icon" type="image/png" href="http://sciants.co/favicon.png">
