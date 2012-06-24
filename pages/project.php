@@ -65,7 +65,7 @@
 						<br />
 						<h3><?=$note->title?></h3>
 						<br />
-						<p><?=$fullnote->content?></p>
+						<?=$fullnote->content?>
 					</div>
 				</a>
 			<?php
