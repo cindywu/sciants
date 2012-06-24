@@ -62,11 +62,11 @@
 				<p>Note?: <?=$fullNote->content?></p>
 				<a href="http://www.sciants.co/pages/notes.html">
 					<div class="notes">
-					<div class="notes_date">6/20</div>
+						<div class="notes_date">6/20</div>
 						<br />
 						<h3><?=$note->title?></h3>
 						<br />
-						<?=$fullnote->content?>
+						<p>Note?: <?=$fullNote->content?></p>
 					</div>
 				</a>
 			<?php
