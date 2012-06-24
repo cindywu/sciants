@@ -124,7 +124,7 @@ $notebooks = $noteStore->listNotebooks($authToken);
 				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
 
 ?>
-				<p>Note?: <?=$fullNote->content?></p>
+				<p>Note?: <?=$fullNote->title?></p>
 <?php
 			}
 		}
