@@ -14,23 +14,23 @@
 <html>
 	<head>
 		<title>SciAnts - <?=$mynotebook->name?></title>
-		<link rel="icon" type="image/png" href="http://www.sciants.co/images/favicon.png">
+		<link rel="icon" type="image/png" href="../images/favicon.png">
 		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="http://www.sciants.co/style/project.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../style/project.css" type="text/css" media="screen" />
 	</head>
 	
 	<body>
 		<div id="container">
 			<div id="user">Denny Luan</div>
 			
-			<a href="http://www.sciants.co/pages/index.html">
-				<img src="http://www.sciants.co/images/logo_FULL.png" alt="logo" height="40px" />
+			<a href="../pages/index.html">
+				<img src="../images/logo_FULL.png" alt="logo" height="40px" />
 			</a>
 			
 			<br />
 			<br />
 			
-			<h1><a href="http://www.sciants.co/pages/projectssplash.php">Projects:</a> Silencing of MIR-124</h1>
+			<h1><a href="../pages/projectssplash.php">Projects:</a> Silencing of MIR-124</h1>
 			
 			<div id="search">
 				<input type="text" name="search" value="Search" />
@@ -42,10 +42,10 @@
 			<div><h2>To-do</h2></div>
 			
 			<ul id="to-do">
-				<li><div id="red"></div> Prepare for faculty presentation at 3pm <img src="http://www.sciants.co/images/delete.png" alt="delete" /></li>
-				<li><div id="green"></div> Analyze flow cytometer results <img src="http://www.sciants.co/images/delete.png" alt="delete" /></li>
-				<li><div id="blue"></div> Re-sequence colony PCR results <img src="http://www.sciants.co/images/delete.png" alt="delete" /></li>
-				<li><div id="blue"></div> Stock of tris-buffer and RNAase-freewater <img src="http://www.sciants.co/images/delete.png" alt="delete" /></li>
+				<li><div id="red"></div> Prepare for faculty presentation at 3pm <img src="../images/delete.png" alt="delete" /></li>
+				<li><div id="green"></div> Analyze flow cytometer results <img src="../images/delete.png" alt="delete" /></li>
+				<li><div id="blue"></div> Re-sequence colony PCR results <img src="../images/delete.png" alt="delete" /></li>
+				<li><div id="blue"></div> Stock of tris-buffer and RNAase-freewater <img src="../images/delete.png" alt="delete" /></li>
 			</ul>
 			
 			<h2>Notes</h2>
@@ -54,7 +54,7 @@
 				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
 				$date = date(DATE_RSS, $note->created);
 			?>
-				<a href="http://www.sciants.co/pages/notes.html">
+				<a href="../pages/notes.html">
 					<div class="notes">
 						<div class="notes_date"><?=$date?></div>
 						<br />
