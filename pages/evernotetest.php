@@ -23,13 +23,12 @@
 ?>
 			<p>Empty.....</p>
 <?php
-		} else {
-			foreach ($notes as $note) {
-				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
+		}
+		foreach ($notes as $note) {
+			$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
 ?>
-				<p>Note?: <?=$fullNote->title?></p>
+			<p>Note?: <?=$fullNote->title?></p>
 <?php
-			}
 		}
 	}
 ?>
