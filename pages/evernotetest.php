@@ -105,6 +105,9 @@ $notebooks = $noteStore->listNotebooks($authToken);
 	<p>Number of Notebooks:</p>
 <?php
 	foreach ($notebooks as $notebook) {
+?>
+		<p>Notebook Name:<?=$notebook->name?></p>
+<?php
 		$notefilter = new NoteFilter();
 		#$notefilter->notebookGuid = $notebook->guid;
 		$notefilter->tagGuids = array($notebook->guid);
@@ -112,7 +115,7 @@ $notebooks = $noteStore->listNotebooks($authToken);
 		$notebookname = $notebook->name;
 		foreach ($notes->notes as $note) {
 ?>
-			<p><?=$note->title?></p>
+			<p>Note?: <?=$note->title?></p>
 <?php
 		}
 	}
