@@ -76,7 +76,7 @@ $noteStore = new NoteStoreClient($noteStoreProtocol, $noteStoreProtocol);
 // List all of the notebooks in the user's account        
 $notebooks = $noteStore->listNotebooks($authToken);
 ?>
-
+<html>
 <head>
 	<title>Test</title>
 </head>
@@ -92,4 +92,5 @@ $notebooks = $noteStore->listNotebooks($authToken);
 	<p>yay</p>
 <?php phpinfo() ?>
 </body>
+</html>
 
