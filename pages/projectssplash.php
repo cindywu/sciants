@@ -30,18 +30,20 @@
 			<br /><br />
 			<?php
 			foreach ($notebooks as $notebook) {
+				if ($notebook->name != "wujsean's notebook") {
 			?>
-				<div class="projects">
-					<div class="project-right"><?=$notebook->serviceCreated?>6/20</div>
-				
-					<h2><a href="http://www.sciants.co/pages/project.html"><?=$notebook->name?></a></h2>
-					<h3>[In Progress]</h3>
+					<div class="projects">
+						<div class="project-right">6/20</div>
 					
-					<br />
-					
-					<em>insert tags here</em>
-				</div>
+						<h2><a href="http://www.sciants.co/pages/project.html"><?=$notebook->name?></a></h2>
+						<h3>[In Progress]</h3>
+						
+						<br />
+						
+						<em>insert tags here</em>
+					</div>
 			<?php
+				}
 			}
 			?>
 			<div class="projects">
