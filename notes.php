@@ -8,11 +8,9 @@
 	
 	<body>
 		<div id="container">
-			<div id="user">
-				Denny Luan
-			</div>
+			<div id="user">Denny Luan</div>
 			
-			<h1>Project: Example</h1>
+			<h1>Project: Example (<a href="http://sciants.co/">Demo Home</a>)</h1>
 			<h2>Day 1 | June 20</h2>
 			<em>Subtitle goes here! Yay!</em>
 		
