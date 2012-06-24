@@ -107,15 +107,14 @@ function getAllNotes($authToken, $noteStore, $notebook){
 	return $notes->notes;
 }
 
-function createAndSendNewNote($authToken, $title, $content) {
+function createAndSendNewNote($authToken, $noteStore, $title, $content) {
 	$note = new Note();
-	$note->title = "Test note from EDAMTest.php";
+	$note->title = $title;
 
 	$note->content =
 	  '<?xml version="1.0" encoding="UTF-8"?>' .
 	  '<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">' .
 	  '<en-note>' . $content .
-	  //'<en-media type="image/png" hash="' . $hashHex . '"/>' .
 	  '</en-note>';
 
 	// When note titles are user-generated, it's important to validate them
@@ -166,5 +165,6 @@ function createAndSendNewNote($authToken, $title, $content) {
 	// The content of an Evernote note is represented using Evernote Markup Language
 	// (ENML). The full ENML specification can be found in the Evernote API Overview
 	// at http://dev.evernote.com/documentation/cloud/chapters/ENML.php
+	//'<en-media type="image/png" hash="' . $hashHex . '"/>' .
 
 ?>

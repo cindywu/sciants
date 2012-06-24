@@ -33,7 +33,7 @@
 <?php
 		}
 	}
-	createAndSendNewNote($authToken, "TESTING STUFFS!!!", "STUFFS!!!!!!");
+	createAndSendNewNote($authToken, $noteStore, "TESTING STUFFS!!!", "STUFFS!!!!!!");
 ?>
 	
 	<p>yay</p>
