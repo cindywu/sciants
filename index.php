@@ -10,9 +10,10 @@
 	<body>
 		<div id="container">
 			<h1>Sci-Ants: The Only Notebook You'll Ever Need</h1>
-			
-			<a href="http://sciants.co/projectssplash.php">Project Splash</a>
-			<a href="http://sciants.co/project.php">Project</a>
+				
+			<h2>Demo it now:</h2>
+			<a href="http://sciants.co/projectssplash.php">Project Splash</a> | 
+			<a href="http://sciants.co/project.php">Project</a> | 
 			<a href="http://sciants.co/notes.php">Note</a>
 		</div>
 	</body>
