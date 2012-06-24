@@ -102,6 +102,15 @@ $notebooks = $noteStore->listNotebooks($authToken);
 </head>
 <body>
 	<p>Number of Notebooks:</p>
+<?php
+	foreach ($notebooks as $notebook) {
+		$notebookname = $notebook->name;
+?>
+		<p><?=$notebookname?></p>
+<?php
+	}
+?>
+
 	<p>yay</p>
 </body>
 </html>
