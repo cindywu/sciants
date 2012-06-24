@@ -52,10 +52,11 @@
 			<?php
 			foreach ($notes as $note) {
 				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
+				$date = date('D, d M Y', note->created);
 			?>
 				<a href="http://www.sciants.co/pages/notes.html">
 					<div class="notes">
-						<div class="notes_date">6/20</div>
+						<div class="notes_date"><?=$date?></div>
 						<br />
 						<h3><?=$note->title?></h3>
 						<br />
