@@ -58,7 +58,9 @@
 						<br />
 						<h3><?=$note->title?></h3>
 						<br />
-						<p><?=$note->content?></p>
+						<p>Content?:<?=$note->content?></p>
+						<p>ContentHash?:<?=$note->contentHash?></p>
+						<p>Content?:<?=$note->notebookGuid></p>
 					</div>
 				</a>
 			<?php
