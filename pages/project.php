@@ -53,7 +53,6 @@
 			foreach ($notes as $note) {
 				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
 			?>
-				<p>Note?: <?=$fullNote->content?></p>
 				<a href="http://www.sciants.co/pages/notes.html">
 					<div class="notes">
 						<div class="notes_date">6/20</div>
