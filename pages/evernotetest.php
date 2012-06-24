@@ -90,5 +90,6 @@ $notebooks = $noteStore->listNotebooks($authToken);
 ?>
 	<p>Number of Notebooks: <?=count($notebooks)?></p>
 	<p>yay</p>
+<?php phpinfo() ?>
 </body>
 
