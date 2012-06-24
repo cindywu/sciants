@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 
 <?php
+use EDAM\NoteStore\NoteFilter;
 use EDAM\UserStore\UserStoreClient;
 use EDAM\NoteStore\NoteStoreClient;
 use EDAM\Types\Data, EDAM\Types\Note, EDAM\Types\Resource, EDAM\Types\ResourceAttributes;
@@ -104,7 +105,7 @@ $notebooks = $noteStore->listNotebooks($authToken);
 	<p>Number of Notebooks:</p>
 <?php
 	foreach ($notebooks as $notebook) {
-		$notefilter = new NoteFilter(0);
+		$notefilter = new NoteFilter();
 		//$notefilter->notebookGuid = $notebook->guid;
 		//$allnotes = noteStore.findNotes($authToken, $notefilter, 0, 100);
 		//$notebookname = $notebook->name;
