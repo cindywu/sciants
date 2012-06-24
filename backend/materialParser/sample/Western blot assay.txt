@@ -1,0 +1,48 @@
+Western blot assay
+Lin Yan
+03/23/2011
+
+Materials
+Phosphate buffered saline (PBS)
+2X Laemmli sample buffer (BioRad, Cat# 161-0737, need add ß-mercaptoethanol before use)
+26-gauge needle or sonicator  
+Ready Gel Tris-HCl Precast Gels (BioRad , 4-20%, 10-well, 50µl, Cat# 161-1159)
+Precision protein Standard western C (BioRad, Cat# 161-0385)
+SDS-PAGE running buffer, diluted from 10x Tris/Glycine/SDS (BioRad, Cat# 161-0732) 
+Electrophorese Transfer Buffer: 800ml of 1x solution diluted from 10x Tris/Glycine (BioRad, Cat# 161-0734) + 200ml of Methanol, pH 8.0
+3MM filter paper
+PVDF
+TBST WB wash buffer (10 mM Tris pH 7.5, 100 mM NaCl, 0.1% Tween 20): dilute from 20X stock solution (0.5L 400mM Tris•Cl, pH7.4, 116.7g NaCl in 1L), add 1ml of Tween 20 in 1L.
+WB Blocking Buffer: TBST w/1% BSA
+Immun-Star™ WesternC™ Chemiluminescence Kit (BioRad, #170-5070)
+
+Protocol
+Protein sample preparation from cell culture
+* I didn’t do cell culture sample before, but get a reference from BD. http://www.bdbiosciences.com/support/resources/protocols/horseradish_peroxidase.jsp 
+1.	Decant medium from 10 cm dish of adherent cells and rinse plate rapidly with PBS.
+2.	Aspirate excess PBS. Do not dry cells. 
+3.	Add 1 ml boiling 2X Laemmli sample buffer 
+4.	Scrape cells from dish, transfer to a microcentrifuge tube, and boil for an additional 5 minutes. To reduce viscosity, the sample may be sonicated briefly or passed several times through a 26-gauge needle. Centrifuge the sample for 10 minutes to pellet insoluble material, and collect the supernatant (cell lysate).
+5.	The cell lysate sample is now ready for loading onto your gel.
+SDS-PAGE
+1.	Load 50 µl samples to each well (5-20 µg total protein of cell lysate to a 0.75-1mm thick gel; 25-40µg to 1.5mm thick gel).  Load 5µl Precision protein standard.
+2.	Set SDS-PAGE running program as constant 80ma for 10min, then constant 120ma for 20 min, till the bromophenol blue line reaches the bottom. 
+Protein transfer to PVDF
+1.	Equilibrate gel in transfer buffer for 15 min
+2.	For each gel, cut 2 pieces of 3MM filter paper to a little smaller size of gel and soak in transfer buffer
+3.	For each gel, cut 1 PVDF to a little bigger size of gel, wet in 100% methanol -> diH2O -> sock in  transfer buffer
+4.	Wet pads with transfer buffer
+5.	Assemble transfer sandwich as outlined below:  (Red) pos. pole> clear plate> pad> 3 MM> PDVF> gel> 3 MM> pad> black plate> neg. pole (Black).  Roll each layer with a pipter to avoid any bubbles.
+6.	Close the sandwich board and dunk into filled transfer chamber.
+7.	Run transfer at 100 volts at 4°C for 1hr as maximum. Verify transfer through precision protein standard. 
+Western Blot
+1.	Block the membrane into 10-20ml of blocking buffer for 1hr at room temperature or overnight at 4°C.
+2.	Wash the membrane by 20ml of WB wash buffer, 5 min X 3 times with agitation. 
+3.	Dilute the 1st Abs in the corresponding blocking buffer; incubate the membrane with the 1st Abs with agitation for 1hr at room temperature.
+4.	Wash the membrane by 20ml of WB wash buffer, 5 min X 3 times with agitation.
+5.	Dilute the 2nd Abs conjugated with HRP in the corresponding blocking buffer; incubate the membrane with the 2nd Abs with agitation for 30min at room temperature.
+6.	Wash the membrane by 20ml of WB wash buffer, 10 min X 4 times with agitation.
+7.	Mix A and B solutions (1 ml each) of Chmiluminescence kit before use.  Place the membrane in a plastic bag containing chemiluminescent working solution and incubate for 1 min at RT.
+8.	Drain off excess substrate by dipping on paper tower.  Cover the membrane by plastic wrap to prevent drying. Smooth over covered blot to remove air bubbles and excess substrate.
+9.	Camera detection using an imaging system.  An initial exposure of 1 min is recommended for film.
+

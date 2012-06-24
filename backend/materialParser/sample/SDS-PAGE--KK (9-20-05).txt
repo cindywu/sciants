@@ -1,0 +1,144 @@
+
+SODIUM DODECYL SULFATE-POLYACRYLAMIDE GEL ELECTROPHORESIS (SDS-PAGE)
+(Revised by K. Katzenmeyer 10-10-06)
+
+
+A.  Materials
+
+-Laemmli Sample Buffer (Bio-Rad 161-0737)
+-10X Tris/Glycine/SDS premixed buffer (Bio-Rad 161-0732)
+-Tris-HCl Ready Gels, 12-well, 4-15% linear gradient (Bio-Rad 161-1176)
+-Precision Plus Protein Kaleidoscope Standards, ~10-250 kD, 500 µl, denatured (Bio-Rad 161-0375)
+-GelCode Blue Stain Reagent (Pierce 24590)
+-Gel Drying Solution (Bio-Rad 161-0752) or 20% ethanol, 10% glycerol)
+-ß-mercaptoethanol (Bio-Rad 161-0710) 
+-Protein samples, lyophilized or in solution
+-Distilled water
+-Methanol 
+-Glacial acetic acid 
+-Ice
+
+
+	B.  Equipment
+
+-Electrophoresis unit (Sigma Z372404)
+-Power supply
+-Small water bath, heated to 95°C 
+-Gel drying frames and cellophane membranes (Sigma Z377570)
+-Gel loading tips (Prot/Elec Tips:  Bio-Rad 223-9917)
+-200 ml pipette (Rainin) or 100 ml pipette (Eppendorf)
+-Razor blade
+-Low retention microtubes for sample preparation
+-Containers for staining and washing gels
+
+
+	C.  Method
+
+Standard preparation:
+1.	Keep on ice until needed.
+
+Gel preparation:
+2.	Prepare 1 L of running buffer by mixing 100 ml of 10X concentrate with 900 ml of distilled water.
+
+3.	Equilibrate precast gels to room temperature.  
+
+
+4.	Prepare gel by cutting along black line with a razor blade, then removing tape.
+
+5.	Place gels in the unit using clamps.  Clamp with smaller of notched plates (and gel comb) toward inner upper buffer reservoir.  Repeat with other gel.  If using one gel, clamp acrylic piece to side without gel to form upper reservoir buffer in same way as gel.  Press down while clamping to avoid leaks.
+
+6.	Pour freshly prepared running buffer in lower and upper chambers.  (Can you reuse buffer, and if so, how many times?)  Fill lower buffer reservoir to half way.  Fill upper buffer reservoir to above well level in precast gel but not overflowing.
+
+7.	Remove comb from gel.  Using a pipette, thoroughly flush out the wells of the gel lanes with 100 µl of buffer from the upper chamber.
+
+Sample Preparation:
+8.	In the fume hood, prepare sample buffer by mixing 1 part ß-mercaptoethanol to 19 parts Laemmli.
+
+9.	 Dilute protein samples 1 part in 1 part sample buffer or 2 parts sample buffer if your sample is higher concentration.  Lyophilized samples can also be diluted directly into sample buffer.
+
+10.	Place samples in 95°C water bath and boil for 5 minutes.  Afterwards, place samples on ice while loading gel.  
+
+Gel loading and Running:
+11.	Add 10 µl of undiluted protein standards and 15-20 µl of each sample solution to individual wells.  Fill any remaining lanes with running buffer.
+
+12.	Attach safety cover and place apparatus into an ice bath to prevent melting of the gel and uneven heating (which causes smiling).  
+
+13.	Connect leads to power supply (red-red, black-black) and turn on power supply.  
+
+14.	Set machine to run at constant voltage:  Recommended (from Vicki) power for separation (0.75 mm thick gel) at room temperature are as follows:    
+
+
+
+70 VDC, 15 mA, 4 hrs
+120 VDC, 20 mA, 2 hrs
+150 VDC, 25 mA, 1.5 hrs (Becky recommends 60 min)
+180 VDC, 20 mA, 1.0 hr
+If running two gels, keep the voltage the same but double the current.  Current will drop as resistance rises due to the migration of the ions in the buffer to the electrodes.  Check every so often to make sure the dye fronts have not run off the gel.
+
+NOTE:  You should see a curtain of bubbles forming evenly on the wire which crosses the bottom of the upper reservoir.  If you don’t, check that the power supply is functioning properly.  You can also try removing and reloading the gel into another (or the same) electrophoresis unit.
+
+Gel Removal and Treatment:
+15.	Turn off power supply and disconnect leads.  Remove the safety cover.
+
+16.	Detach side clamps and drain upper buffer into lower chamber.  Remove gel sandwich.
+
+17.	Peal off the sticker which keeps the sandwich together and carefully separate the gel from the glass by submerging the plate in rinse water or by using a razor.
+
+18.	Place the gel in a clean tray and rinse 3 times, for 5 minutes each time, with 100-200 ml of distilled water.
+
+NOTE:   Prefixed gels may develop better than non-fixed gels.  To fix, equilibrate gels in 50% methanol/7% acetic acid solution in the fume hood for 15 minutes and extensively rinse to remove fixing solution.  Save the fixation solution and label as hazardous waste.
+
+19.	Remove any solution in the tray and add GelCode stain (usually 20 ml for one gel).  Gently shake tray and wait for band development.  Staining will reach intensity in 1 hour; overnight staining will not increase background stain.
+
+20.	Replace stain with deionized water (several changes may be necessary for optimal results).  This water equilibration enhances staining sensitivity as weak bands develop over a period of 1-2 hrs.  Gels may also be left to de-stain overnight.
+
+NOTES:  GelCode Blue can be reused, but less and less staining will occur upon repetition.  GelCode Blue is also toxic and has 4 mysterious proprietary ingredients.  Therefore, it must be picked up in a labeled hazardous waste container.
+
+21.	After staining, equilibrate gel in Gel Drying Solution or 20% ethanol/10% glycerol solution for at least 30 minutes. 
+
+22.	Place two cellophane sheets in water for 1-2 minutes to soften.
+
+23.	Lay one of the sheets on the solid back plate, beveled edge down.  Remove air bubbles.
+
+24.	Add gel to cellophane, avoiding air bubbles.  Pipette a small amount (1-2 ml) of the Gel Drying Solution (or 20% ethanol/10% glycerol solution) on top of gel.
+
+25.	Layer second cellophane sheet on top, matching the edges of the cellophane with the edges of the back plate.  Remove air bubbles.
+
+26.	Place the open frame over the stack, matching edges of back plate, beveled edge up.  Be sure that the frame covers all of the cellophane.  Attach plastic clips to all four sides of the frame.
+
+27.	Set frame horizontally and let gel dry overnight at room temperature.  
+
+28.	Remove clips and carefully separate frame assembly.  Peel off the dry gel/cellophane sandwich from the back plate and trim off excess cellophane with scissors.  The edges of the cellophane which were between the frame pieces may remain slightly damp and will curl if not immediately trimmed off after disassembling the frame.
+
+29.	Document the gel by taking a digital photo or scanning the dry gel.
+
+
+D.  Clean-up
+
+30.	Place stain, fixation and drying solutions, and sample buffer containing ß-mercaptoethanol in separate waste containers and label as hazardous waste:  all solutions are toxic.  NOTE:  Simply diluting your hazardous waste to meet the sewer discharge limit is not acceptable!
+
+31.	Running buffer and sample buffer not containing ß-mercaptoethanol may be discharged in the sewer.
+
+ 
+
+E.	Troubleshooting*
+*Suggestions by Invitrogen 
+
+
+Electrophoresis Problem	Possible Cause	Suggested Solution
+Run taking longer time with recommended voltage. 	Running buffer too dilute. 	Make fresh running buffer and use a 1X dilution. 
+Current too high and excessive heat generated with recommended voltage. 	Running buffer too concentrated. 	Make fresh running buffer and use a 1X dilution. 
+Current too low or no current with recommended voltage. 	Incomplete circuit. 	Remove the tape from the bottom of the gel cassette prior to electrophoresis; Make sure the buffer covers sample wells; check the wire connections on the buffer core. 
+Streaking of proteins. 	Sample overload. High salt concentration in sample. 	Load less amount of protein. Decrease the sample salt concentration by dialysis or gel filtration. 
+Streaking of proteins. 	Sample precipitates. 	Increase the concentration of SDS in the sample. 
+Streaking of proteins. 	Contaminants such as lipids or DNA complexes in sample. 	Centrifuge or clarify the sample to remove particulate contaminants. 
+Streaking of proteins. 	Poorly poured gel. 	Make sure the gel is poured evenly and all at once. 
+Fuzzy bands. 	Protein sample only partially denatured. 	Fully denature the protein. 
+Fuzzy bands. 	Protein sample only partially reduced. 	Make sure sufficient amount of DTT or ß-mercaptoethanol is added. 
+Fuzzy bands. 	Gel ran for too long. 	Watch the front dye as an indicator for proper running time. 
+Dumbbell shaped bands or “smiling” bands. 	Loading a large volume of sample causes incomplete stacking. 	Load appropriate volume of sample. If the sample is too dilute, concentrate it using ultrafiltration. 
+Dumbbell shaped bands or “smiling” bands. 	Uneven electric field during run. 	Try to make sure the loading is symmetrical if the protein concentration is known. 
+Dumbbell shaped bands or “smiling” bands. 	Uneven surface of the resolving gel. 	Try to make the resolving gel surface even while pouring the gel. 
+Dumbbell shaped bands or “smiling” bands. 	Expired gels. 	Use the gels before the specified expiration date. 
+Dumbbell shaped bands or “smiling” bands. 	Uneven heating.	Stir running buffer with magnetic stirrer or use lower current.
+
