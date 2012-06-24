@@ -24,13 +24,13 @@ require_once("packages/Limits/Limits_constants.php");
 
 $authToken = "S=s1:U=26f48:E=13f7353dff5:C=1381ba2b3f5:P=1cd:A=en-devtoken:H=db47bd43568923301e8c48040c574928";
 #$authToken = "your developer token";
-
+/*
 if ($authToken == "your developer token") {
   print "Please fill in your developer token\n";
   print "To get a developer token, visit https://sandbox.evernote.com/api/DeveloperToken.action\n";
   exit(1);
 }
-
+*/
 // Initial development is performed on our sandbox server. To use the production 
 // service, change "sandbox.evernote.com" to "www.evernote.com" and replace your
 // developer token above with a token from 
@@ -49,7 +49,7 @@ $versionOK =
   $userStore->checkVersion("Evernote EDAMTest (PHP)",
 			   $GLOBALS['EDAM_UserStore_UserStore_CONSTANTS']['EDAM_VERSION_MAJOR'],
 			   $GLOBALS['EDAM_UserStore_UserStore_CONSTANTS']['EDAM_VERSION_MINOR']);
-print "Is my Evernote API version up to date?  " . $versionOK . "\n\n";
+#print "Is my Evernote API version up to date?  " . $versionOK . "\n\n";
 if ($versionOK == 0) {
   exit(1);
 }
