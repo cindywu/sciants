@@ -52,7 +52,7 @@
 			<?php
 			foreach ($notes as $note) {
 				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
-				$date = date('D, d M Y', note->created);
+				$date = date(DATE_RSS, $note->created);
 			?>
 				<a href="http://www.sciants.co/pages/notes.html">
 					<div class="notes">
