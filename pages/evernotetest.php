@@ -107,7 +107,7 @@ $notebooks = $noteStore->listNotebooks($authToken);
 	foreach ($notebooks as $notebook) {
 		$notefilter = new NoteFilter();
 		$notefilter->notebookGuid = $notebook->guid;
-		$allnotes = noteStore.findNotes($authToken, $notefilter, 0, 100);
+		$allnotes = $noteStore.findNotes($authToken, $notefilter, 0, 100);
 		//$notebookname = $notebook->name;
 		//foreach ($notes->notes as $note) {
 	}
