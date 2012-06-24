@@ -46,6 +46,7 @@
 				}
 			}
 			?>
+<!--
 			<div class="projects">
 				<div class="project-right">6/20</div>
 				
@@ -77,7 +78,7 @@
 	
 				<em>insert tags here</em>
 			</div>
-			
+-->
 		</div>
 	</body>
 </html>
