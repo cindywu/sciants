@@ -35,7 +35,7 @@
 					<div class="projects">
 						<div class="project-right">6/20</div>
 					
-						<h2><a href="http://www.sciants.co/pages/project.html"><?=$notebook->name?></a></h2>
+						<h2><a href="http://www.sciants.co/pages/project.php"><?=$notebook->name?></a></h2>
 						<h3>[In Progress]</h3>
 						
 						<br />
