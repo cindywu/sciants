@@ -112,6 +112,9 @@ $notebooks = $noteStore->listNotebooks($authToken);
 		#$filter->notebookGuid = $notebook->guid;
 		$filter->tagGuids = array($notebook->guid);
 		$notes = $noteStore->findNotes($authToken, $filter, 0, 100);
+?>
+		<p><?=$notebook->guid?></p>
+<?php
 		if (empty($notes->notes)) {
 ?>
 			<p>Empty.....</p>
