@@ -38,6 +38,10 @@ h3, p, ul, ol {
 	display: block;
 }
 
+.projects {
+	width: 480px;
+}
+
 @font-face { 
 	font-family: ArcherPro; 
 	src: url('http://sciants.co/ArcherPro-Medium.otf'); 

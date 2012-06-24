@@ -8,7 +8,9 @@
 	
 	<body>
 		<div id="container">
-			<h1><a href="http://sciants.co/projectsplash.php">Projects</a> - Tim (<a href="http://sciants.co/">Demo Home</a>)</h1>
+			<div id="user">Denny Luan</div>
+			
+			<h1>Projects - Tim (<a href="http://sciants.co/">Demo Home</a>)</h1>
 			
 			&nbsp;
 			
