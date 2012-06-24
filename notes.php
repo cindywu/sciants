@@ -8,14 +8,14 @@
 	
 	<body>
 		<div id="container">
-			<h1>Project: Example</h1>
-			<h2>Day 1 | June 20</h2>
-			<em>Subtitle</em>
-		
 			<div id="user">
-				Denny Luan (goes on right)
+				Denny Luan
 			</div>
 			
+			<h1>Project: Example</h1>
+			<h2>Day 1 | June 20</h2>
+			<em>Subtitle goes here! Yay!</em>
+		
 			<p>Notes go here!</p>
 			
 			<p>Here is a list!</p>

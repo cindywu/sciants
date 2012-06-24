@@ -1,15 +1,17 @@
 h1 {
 	font-size: 2em;
 	font-family: ArcherPro, Sans-Serif;
+	margin-bottom: 5px;
 }
 
 h2 {
 	font-size: 1.5em;
 	font-family: ArcherPro, Sans-Serif;
+	margin-bottom: 5px;
 }
 
 #container {
-	margin-top: 10px;
+	margin-top: 25px;
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
