@@ -1,21 +1,21 @@
 body {
-	background-image: url('../grid-18px-masked.png');
+	background-image: url('http://sciants.co/images/grid-18px-masked.png');
 	background-repeat: repeat-x;
+}
+
+h1 , h2 {
+	font-family: ArcherPro, Sans-Serif;
 }
 
 h1 {
 	font-size: 2em;
-	font-family: ArcherPro, Sans-Serif;
-	margin-bottom: 5px;
 }
 
 h2 {
 	font-size: 1.5em;
-	font-family: ArcherPro, Sans-Serif;
-	margin-bottom: 5px;
 }
 
-h3, p, ul, ol {
+h1, h2, h3, p, ul, ol {
 	margin-bottom: 5px;
 }
 
@@ -44,6 +44,10 @@ a:hover {
 	margin-top: 10px;
 }
 
+#search {
+	margin-bottom: 70px;
+}
+
 #search input {
 	float: left;
 	height: 26px;
@@ -67,6 +71,10 @@ a:hover {
 #search div {
 	padding-top: 3px;
 	float: left;
+}
+
+#to-do {
+	margin-bottom: 50px;
 }
 
 #to-do li {
@@ -127,12 +135,31 @@ a:hover {
 	margin-top: 2px;
 }
 
+.notes {
+	border: 2px solid #d1eef3;
+	height: 300px;
+	width: 200px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
+	background-image: url('http://sciants.co/images/grid.png');
+}
+
+.notes_date {
+	float: right;
+}
+
+.notes:hover {
+	border: 2px solid #ef417b;
+}
+
 @font-face { 
 	font-family: ArcherPro; 
-	src: url('http://sciants.co/ArcherPro-Medium.otf'); 
+	src: url('http://sciants.co/fonts/ArcherPro-Medium.otf'); 
 }
 
 @font-face { 
 	font-family: ProximaNova; 
-	src: url('http://sciants.co/ProximaNova-Reg.otf'); 
+	src: url('http://sciants.co/fonts/ProximaNova-Reg.otf'); 
 }
