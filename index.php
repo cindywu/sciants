@@ -4,6 +4,7 @@
 		<link rel="icon" type="image/png" href="http://sciants.co/favicon.png">
 		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="http://sciants.co/style/project.css" type="text/css" media="screen" />
+		
 	</head>
 	
 	<body>
