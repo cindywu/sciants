@@ -50,7 +50,8 @@ set_exception_handler('en_exception_handler');
 // purpose of exploring the API, you can get a developer token that allows
 // you to access your own Evernote account. To get a developer token, visit 
 // https://sandbox.evernote.com/api/DeveloperToken.action
-$authToken = "6f287a5fba0329ea";
+#$authToken = "S=s1:U=26f56:E=13f738b8344:C=1381bda5744:P=1cd:A=en-devtoken:H=1fc3322861382db56c9ee0b3ea862e84";
+$authToken = "your developer token";
 
 if ($authToken == "your developer token") {
   print "Please fill in your developer token\n";
