@@ -50,7 +50,6 @@ if ($authToken == "your developer token") {
   exit(1);
 }
 
-
 // Initial development is performed on our sandbox server. To use the production 
 // service, change "sandbox.evernote.com" to "www.evernote.com" and replace your
 // developer token above with a token from 
@@ -73,6 +72,28 @@ $versionOK =
 if ($versionOK == 0) {
   exit(1);
 }
+
+// Get the URL used to interact with the contents of the user's account
+// When your application authenticates using OAuth, the NoteStore URL will
+// be returned along with the auth token in the final OAuth request.
+// In that case, you don't need to make this call.
+$noteStoreUrl = $userStore->getNoteStoreUrl($authToken);
+
+$parts = parse_url($noteStoreUrl);
+if (!isset($parts['port'])) {
+  if ($parts['scheme'] === 'https') {
+    $parts['port'] = 443;
+  } else {
+    $parts['port'] = 80;
+  }
+}
+$noteStoreHttpClient = 
+  new THttpClient($parts['host'], $parts['port'], $parts['path'], $parts['scheme']);
+$noteStoreProtocol = new TBinaryProtocol($noteStoreHttpClient);
+$noteStore = new NoteStoreClient($noteStoreProtocol, $noteStoreProtocol);
+
+// List all of the notebooks in the user's account        
+$notebooks = $noteStore->listNotebooks($authToken);
 ?>
 
 <html>
