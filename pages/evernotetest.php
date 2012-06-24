@@ -106,7 +106,7 @@ $notebooks = $noteStore->listNotebooks($authToken);
 <?php
 	foreach ($notebooks as $notebook) {
 		$notefilter = new NoteFilter();
-		$notefilter->notebookGuid = $notebook->guid;
+		#$notefilter->notebookGuid = $notebook->guid;
 		$notefilter->tagGuids = array($notebook->guid);
 		$allnotes = $noteStore->findNotes($authToken, $notefilter, 0, 100);
 		$notebookname = $notebook->name;
