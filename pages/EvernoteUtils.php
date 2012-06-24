@@ -106,4 +106,65 @@ function getAllNotes($authToken, $noteStore, $notebook){
 	$notes = $noteStore->findNotes($authToken, $filter, 0, 100);
 	return $notes->notes;
 }
+
+function createAndSendNewNote($authToken, $title, $content) {
+	$note = new Note();
+	$note->title = "Test note from EDAMTest.php";
+
+	$note->content =
+	  '<?xml version="1.0" encoding="UTF-8"?>' .
+	  '<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">' .
+	  '<en-note>' . $content .
+	  //'<en-media type="image/png" hash="' . $hashHex . '"/>' .
+	  '</en-note>';
+
+	// When note titles are user-generated, it's important to validate them
+	$len = strlen($note->title);
+	$min = $GLOBALS['EDAM_Limits_Limits_CONSTANTS']['EDAM_NOTE_TITLE_LEN_MIN'];
+	$max = $GLOBALS['EDAM_Limits_Limits_CONSTANTS']['EDAM_NOTE_TITLE_LEN_MAX'];
+	$pattern = '#' . $GLOBALS['EDAM_Limits_Limits_CONSTANTS']['EDAM_NOTE_TITLE_REGEX'] . '#'; // Add PCRE delimiters
+	if ($len < $min || $len > $max || !preg_match($pattern, $note->title)) {
+	  print "\nInvalid note title: " . $note->title . '\n\n';
+	  exit(1);
+	}
+
+	// Finally, send the new note to Evernote using the createNote method
+	// The new Note object that is returned will contain server-generated
+	// attributes such as the new note's unique GUID.
+	$createdNote = $noteStore->createNote($authToken, $note);
+}
+// To include an attachment such as an image in a note, first create a Resource
+	// for the attachment. At a minimum, the Resource contains the binary attachment 
+	// data, an MD5 hash of the binary data, and the attachment MIME type. It can also 
+	// include attributes such as filename and location.
+	/*
+	//Attachment
+	$filename = "enlogo.png";
+	$image = fread(fopen($filename, "rb"), filesize($filename));
+	$hash = md5($image, 1);
+
+	$data = new Data();
+	$data->size = strlen($image);
+	$data->bodyHash = $hash;
+	$data->body = $image;
+
+	$resource = new Resource();
+	$resource->mime = "image/png";
+	$resource->data = $data;
+	$resource->attributes = new ResourceAttributes();
+	$resource->attributes->fileName = $filename;
+
+	// Now, add the new Resource to the note's list of resources
+	$note->resources = array( $resource );
+
+
+	// To display the Resource as part of the note's content, include an <en-media>
+	// tag in the note's ENML content. The en-media tag identifies the corresponding
+	// Resource using the MD5 hash.
+	$hashHex = md5($image, 0);
+	*/
+	// The content of an Evernote note is represented using Evernote Markup Language
+	// (ENML). The full ENML specification can be found in the Evernote API Overview
+	// at http://dev.evernote.com/documentation/cloud/chapters/ENML.php
+
 ?>
