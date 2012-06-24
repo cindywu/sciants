@@ -16,17 +16,15 @@
 	foreach ($notebooks as $notebook) {
 ?>
 		<p>Notebook Name:<?=$notebook->name?></p>
-<?php
-		$notes = getAllNotes($authToken, $notebook);
-?>
 		<p><?=$notebook->guid?></p>
 <?php
+		$notes = getAllNotes($authToken, $notebook);
 		if (empty($notes)) {
 ?>
 			<p>Empty.....</p>
 <?php
 		} else {
-			foreach ($notes->notes as $note) {
+			foreach ($notes as $note) {
 				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
 ?>
 				<p>Note?: <?=$fullNote->title?></p>
