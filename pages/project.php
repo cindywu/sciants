@@ -51,6 +51,7 @@
 			<h2>Notes</h2>
 			<?php
 			foreach ($notes as $note) {
+				$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
 			?>
 				<a href="http://www.sciants.co/pages/notes.html">
 					<div class="notes">
@@ -58,9 +59,7 @@
 						<br />
 						<h3><?=$note->title?></h3>
 						<br />
-						<p>Content?:<?=$note->content?></p>
-						<p>ContentHash?:<?=$note->contentHash?></p>
-						<p>Notebook Guid?:<?=$note->notebookGuid?></p>
+						<p><?=$fullnote->content?></p>
 					</div>
 				</a>
 			<?php
