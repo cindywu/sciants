@@ -29,7 +29,7 @@
 		foreach ($notes as $note) {
 			$fullNote = $noteStore->getNote($authToken, $note->guid, true, false, false, false);
 ?>
-			<p>Note?: <?=$fullNote->title?></p>
+			<p>Note?: <?=$fullNote->content?></p>
 <?php
 		}
 	}
