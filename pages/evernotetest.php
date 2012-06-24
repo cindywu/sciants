@@ -21,6 +21,34 @@ require_once("packages/UserStore/UserStore.php");
 require_once("packages/UserStore/UserStore_constants.php");
 require_once("packages/NoteStore/NoteStore.php");
 require_once("packages/Limits/Limits_constants.php");
+
+// A global exception handler for our program so that error messages all go to the console
+function en_exception_handler($exception) {
+  echo "Uncaught " . get_class($exception) . ":\n";
+  if ($exception instanceof EDAMUserException) {
+    echo "Error code: " . EDAMErrorCode::$__names[$exception->errorCode] . "\n";
+    echo "Parameter: " . $exception->parameter . "\n";
+  } else if ($exception instanceof EDAMSystemException) {
+    echo "Error code: " . EDAMErrorCode::$__names[$exception->errorCode] . "\n";
+    echo "Message: " . $exception->message . "\n";
+  } else {
+    echo $exception;
+  }
+}
+set_exception_handler('en_exception_handler');
+
+// Real applications authenticate with Evernote using OAuth, but for the
+// purpose of exploring the API, you can get a developer token that allows
+// you to access your own Evernote account. To get a developer token, visit 
+// https://sandbox.evernote.com/api/DeveloperToken.action
+$authToken = "S=s1:U=26f48:E=13f7353dff5:C=1381ba2b3f5:P=1cd:A=en-devtoken:H=db47bd43568923301e8c48040c574928";
+#$authToken = "your developer token";
+
+if ($authToken == "your developer token") {
+  print "Please fill in your developer token\n";
+  print "To get a developer token, visit https://sandbox.evernote.com/api/DeveloperToken.action\n";
+  exit(1);
+}
 ?>
 <html>
 <head>
