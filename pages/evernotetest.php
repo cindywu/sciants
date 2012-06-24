@@ -49,7 +49,32 @@ if ($authToken == "your developer token") {
   print "To get a developer token, visit https://sandbox.evernote.com/api/DeveloperToken.action\n";
   exit(1);
 }
+
+
+// Initial development is performed on our sandbox server. To use the production 
+// service, change "sandbox.evernote.com" to "www.evernote.com" and replace your
+// developer token above with a token from 
+// https://www.evernote.com/api/DeveloperToken.action
+$evernoteHost = "sandbox.evernote.com";
+$evernotePort = "443";
+$evernoteScheme = "https";
+
+$userStoreHttpClient =
+  new THttpClient($evernoteHost, $evernotePort, "/edam/user", $evernoteScheme);
+$userStoreProtocol = new TBinaryProtocol($userStoreHttpClient);
+$userStore = new UserStoreClient($userStoreProtocol, $userStoreProtocol);
+
+// Connect to the service and check the protocol version
+$versionOK =
+  $userStore->checkVersion("Evernote EDAMTest (PHP)",
+			   $GLOBALS['EDAM_UserStore_UserStore_CONSTANTS']['EDAM_VERSION_MAJOR'],
+			   $GLOBALS['EDAM_UserStore_UserStore_CONSTANTS']['EDAM_VERSION_MINOR']);
+//print "Is my Evernote API version up to date?  " . $versionOK . "\n\n";
+if ($versionOK == 0) {
+  exit(1);
+}
 ?>
+
 <html>
 <head>
 	<title>Test</title>
