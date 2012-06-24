@@ -8,7 +8,7 @@
 			$mynotebook = $notebook;
 		}
 	}
-	$notes = getAllNotes($authToken, $noteStore, $notebook);
+	$notes = getAllNotes($authToken, $noteStore, $mynotebook);
 ?>
 
 <html>
@@ -49,17 +49,18 @@
 			</ul>
 			
 			<h2>Notes</h2>
-			
-			<a href="http://www.sciants.co/pages/notes.html"><div class="notes">
 			<?php
 			foreach ($notes as $note) {
 			?>
-				<div class="notes_date">6/20</div>
-					<br />
-					<h3><?=$note->title?></h3>
-					<br />
-					<p><?=$note->content?></p>
-				</div></a>
+				<a href="http://www.sciants.co/pages/notes.html">
+					<div class="notes">
+					<div class="notes_date">6/20</div>
+						<br />
+						<h3><?=$note->title?></h3>
+						<br />
+						<p><?=$note->content?></p>
+					</div>
+				</a>
 			<?php
 			}
 			?>
