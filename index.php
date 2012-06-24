@@ -11,7 +11,7 @@
 		
 		<a href="http://sciants.co/projectssplash.php">Project Splash</a>
 		<a href="http://sciants.co/project.php">Project</a>
-		<a href="http://sciants.co/note.php">Note</a>
+		<a href="http://sciants.co/notes.php">Note</a>
 		
 	</body>
 </html>

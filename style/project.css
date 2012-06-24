@@ -1,9 +1,19 @@
-body, #todo, #notes {
-	margin: 0%;
-	padding: 0%;
-}
 body {
-	display: block;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+#user {
+	float: right;
 }
 
 #todo {
