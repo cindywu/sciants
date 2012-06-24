@@ -60,7 +60,7 @@
 						<br />
 						<p>Content?:<?=$note->content?></p>
 						<p>ContentHash?:<?=$note->contentHash?></p>
-						<p>Content?:<?=$note->notebookGuid></p>
+						<p>Content?:<?=$note->notebookGuid?></p>
 					</div>
 				</a>
 			<?php
