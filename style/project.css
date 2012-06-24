@@ -27,12 +27,39 @@ a:hover {
 	color: #079583;
 }
 
+#ants {
+	position: absolute;
+	z-index:10;
+}
+
+#ground {
+	position: absolute;
+	margin-top: 22px;
+	z-index:1;
+}
+
+#video {
+	position: absolute;
+	margin-top: 500px;
+	margin-left: 120px;
+	z-index:9;
+	border: 2px solid black;
+}
+
 #container {
 	margin-top: 25px;
-	width: 960px;
+	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: ProximaNova, Sans-Serif;
+}
+
+#footer {
+	position: absolute;
+	color: white;
+	margin-top: 1380px;
+	margin-left: 20px;
+	z-index:8;
 }
 
 #logo {
