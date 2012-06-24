@@ -8,11 +8,13 @@
 	</head>
 	
 	<body>
-		<img src='http://1.bp.blogspot.com/-j_pM7Uwfs8Y/T3ZcN2WVfvI/AAAAAAAAARk/0hG01BsvNUw/s1600/%2386+-+Forgiveness.png' alt='fuckyou'>
-		
-		<a href="http://sciants.co/projectssplash.php">Project Splash</a>
-		<a href="http://sciants.co/project.php">Project</a>
-		<a href="http://sciants.co/notes.php">Note</a>
-		
+		<div id="container">
+			<h1>Sci-Ants: The Only Notebook You'll Ever Need</h1>
+				
+			<h2>Demo it now:</h2>
+			<a href="http://sciants.co/projectssplash.php">Project Splash</a> | 
+			<a href="http://sciants.co/project.php">Project</a> | 
+			<a href="http://sciants.co/notes.php">Note</a>
+		</div>
 	</body>
 </html>
